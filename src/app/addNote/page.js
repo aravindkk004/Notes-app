@@ -7,7 +7,7 @@ export default function Home() {
   const addnote = async (e) => {
     e.preventDefault();
     try{
-      const res = await fetch("http://localhost:3000/api/data",{
+      const res = await fetch("https://aravindkk-notes-next.vercel.app/api/data",{
         method: "POST",
         headers:{
           "content-type": "application/json",

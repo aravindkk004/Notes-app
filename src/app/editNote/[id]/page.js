@@ -2,7 +2,7 @@ import EditForm from "../../../components/EditForm";
 
 const getData = async (id) => {
   try {
-    const res = await fetch(`http://localhost:3000/api/data/${id}`, {
+    const res = await fetch(`https://aravindkk-notes-next.vercel.app/api/data/${id}`, {
       cache: "no-store",
     });
     if (!res.ok) {

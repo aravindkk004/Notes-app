@@ -7,7 +7,7 @@ export default function EditForm({ title, description, id }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch(`http://localhost:3000/api/data/${id}`, {
+      const res = await fetch(`https://aravindkk-notes-next.vercel.app/api/data/${id}`, {
         method: "PUT",
         headers: {
           "content-type": "application/json",

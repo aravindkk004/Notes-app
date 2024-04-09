@@ -9,7 +9,7 @@ export default function Note({ id, title, description }) {
     const deleteNote = async () => {
         const confirmed = confirm("Are you sure want to delete?")
         if (confirmed){
-            const res = await fetch(`http://localhost:3000/api/data?id=${id}`, {
+            const res = await fetch(`https://aravindkk-notes-next.vercel.app/api/data?id=${id}`, {
                 method:"DELETE",
             }); 
             if (res.ok){

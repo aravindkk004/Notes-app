@@ -9,7 +9,7 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://localhost:3000/api/data", {
+        const res = await fetch("https://aravindkk-notes-next.vercel.app/api/data", {
           cache: "no-store",
         });
         if (!res.ok) {
